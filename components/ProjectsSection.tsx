@@ -11,7 +11,7 @@ const projects = [
       "LMS(Library Mangement System to organize and store data.).",
     image: "/lms.png",
     github: "https://github.com/Usmanxs/NCBA-Library",
-    link: "https://LMS.usmanxs.com/",
+    link: "https://www.lms.usmanxs.com/",
   },
   {
     name: "crypto",

@@ -2,7 +2,6 @@
 import React from "react"
 import Image from "next/image"
 import { Link } from "react-scroll"
-import { HiArrowDown } from "react-icons/hi"
 
 const HeroSection = () => {
   return (
