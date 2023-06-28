@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    turbo: {
-        enabled: true,
-      },
-}
+const nextConfig = {}
 
 module.exports = nextConfig
