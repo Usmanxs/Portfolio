@@ -15,8 +15,8 @@ const ToolView: React.FC<Props> = ({ tool }) => {
   const { paths, tagline, description } = tool;
 
   return (
-    <div className="max-w-xs mx-4 my-2">
-      <div className="flex flex-wrap mb-7">
+    <div className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg p-4 m-4 shadow-md w-72 h-90">
+      <div className="flex flex-wrap h-32">
         {paths &&
           paths.map((item) => {
             return (
@@ -29,8 +29,8 @@ const ToolView: React.FC<Props> = ({ tool }) => {
             );
           })}
       </div>
-      <h3 className="mb-3 bold font-right text-xl">{tagline}</h3>
-      <p className='text-base'>{description}</p>
+      <h3 className="bold font-right text-2xl">{tagline}</h3>
+      <p className=' mt-3 text-justify'>{description}</p>
     </div>
   );
 };
@@ -48,7 +48,7 @@ const Tools: React.FC = () => {
         "/reactlogo.svg",
         "/nextjslogo.svg",
         "/solidjs.svg",
-        "/muilogo.svg",
+      
         
       ],
       tagline: "Experinced with modern web frameworks",
@@ -57,10 +57,11 @@ const Tools: React.FC = () => {
     },
     {
       paths: [
-        "/postgreslogo.svg",
+
         "/mysqllogo.svg",
         "/mongologo.svg",
         "/redislogo.svg",
+        'prisma.svg'
       ],
       tagline: "I am familar with SQL, NO SQL and caching databases",
       description:
@@ -97,14 +98,16 @@ const Tools: React.FC = () => {
   
   ];
 
-  return (
+  return (<section className='min-h-[90vh] m-3 w-full '>
+
     <div id='Tools'>
-      <div className="flex flex-col items-center mb-5">
+      <div className="flex flex-col items-center my-5">
         <h2 className="text-4xl text-center m-7">My Tools</h2>
         <p className="mb-5 max-w-lg text-center text-2xl m-5">
           These are the tools that I am experienced with and have used in my projects.
         </p>
-        <div className="lg:grid grid-cols-3 gap-7  mb-7 justify-center">
+        
+        <div className="lg:grid grid-cols-3 gap-7   mb-7 justify-center">
           {tools &&
             tools.map((item, index) => {
               return <ToolView key={index} tool={item} />;
@@ -112,6 +115,7 @@ const Tools: React.FC = () => {
         </div>
       </div>
     </div>
+            </section>
   );
 };
 

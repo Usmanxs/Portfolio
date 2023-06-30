@@ -39,7 +39,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="Projects" >
+    <section id="Projects" className="min-h-[90vh] m-3 w-full" >
      <h2 className="text-4xl text-center m-7 ">Projects</h2>
 
       <div className="flex flex-col space-y-24 justify-center m-20" >

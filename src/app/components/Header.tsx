@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import React from 'react'
 import { useState, useEffect } from 'react'
 import {motion} from 'framer-motion'
@@ -35,9 +35,9 @@ const Header: React.FC<HeaderProps> = () => {
        animate={{opacity:1}}
         transition={{delay:0.2,duration:0.2 , type:'spring'}}
         >
-
+                
     <nav className='lg:w-3/4 2xl:w-3/4 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex  justify-end '>
-
+      
       <ul className='flex  gap-12'>
                     {navs.map((e, i) => (
                         <li key={i}>

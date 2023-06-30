@@ -45,10 +45,10 @@ const skills: Skill[] = [
 const SkillView: React.FC<Skill> = ({ ico, title, description }) => {
   return (
     <div className="max-w-xs sm:max-w-sm md:max-w-md mx-auto mb-6 sm:mb-8">
-      <div className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md w-96 h-60 ">
+      <div className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg p-4 m-4 shadow-md w-64 h-72 ">
         <img className="w-16 h-16  sm:w-1/4 mb-2" src={ico} alt={title} />
         <h3 className="text-lg sm:text-xl  font-medium mb-2">{title}</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400 font-medium text-center ">{description}</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400 font-medium text-justify ">{description}</p>
       </div>
     </div>
   );
@@ -62,23 +62,16 @@ const Skills: React.FC = () => {
   ));
 
   return (
-    <section id='Skills'>
-   <div>
+    <section  className='min-h-[90vh] m-3 w-full'>
+   <div id='Skills' className='my-5'>
 
     <h2 className="text-4xl text-center my-14 ">Skills</h2>
-    <div className={`mb-6 sm:mb-8 flex  w-full justify-center`}>
-      <div className="flex justify-center"></div>
-
-     
-
       <motion.div
-    
-    
-    className=" rounded-lg w-full ml-3 "
+    className=" w-full  "
     >
-        <div className="grid grid-cols-1 sm:grid-cols-2 justify-center">{renderedSkills}</div>
+        <div className=" lg:grid grid-cols-4 mb-7 justify-center">{renderedSkills}</div>
       </motion.div>
-    </div>
+  
       </div>
         </section>
   );

@@ -12,11 +12,8 @@ const Hero = () => {
   
 
     return (
-        <motion.section  id='Home' className={`  ${theme === 'dark' && "bg-grey-900"} relative min-h-screen w-full mx-auto overflow-hidden`}
-        initial={{opacity:0 }}
-        transition={{delay:0.5 ,duration:0.5}}
-        animate={{opacity:1, x:"1vw" }}
-        
+        <motion.section  id='Home' className={`  ${theme === 'dark' && "bg-grey-900"} relative min-h-[90vh] w-full mx-auto overflow-hidden`}
+       
            >
   
 

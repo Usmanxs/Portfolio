@@ -10,8 +10,9 @@ const Contact = () => {
   }
 
   return (
-    <section id='Contact'>
-     
+    <section className='min-h-[90vh] w-full m-2' >
+     <div id="Contact">
+
     <h2 className="text-4xl text-center m-7 ">Contact Me</h2>
     <form onSubmit={handleSubmit} className="max-w-6xl mx-auto p-6  rounded shadow-lg">
       <div className="mb-4">
@@ -95,6 +96,7 @@ const Contact = () => {
         Submit
       </button>
     </form>
+          </div>
         </section>
   );
 };
