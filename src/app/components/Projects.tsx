@@ -7,12 +7,13 @@ const projects = [
   {
     name: "LMS",
     description:
-      "LMS(Library Mangement System to organize and store data.).",
+      "Library Mangement System to organize and store data. The system utilizes the Google Books API to organize data related to the book that is authors, cover picture  and description . It provides functionalities such as book search, retrieving book details, displaying book covers, and checking book availability.",
     image: "/lms.png",
     paths: [
   
   
       "/solidjs.svg",
+      "typescript.svg",
       "prisma.svg",
       "mysqllogo.svg"
       
@@ -21,7 +22,7 @@ const projects = [
     link: "https://www.lms.usmanxs.com/",
   },
   {
-    name: "crypto",
+    name: "Crypto",
     description: "It is an crapto exchange site where you can vary the coins and its prices.",
     image: "/crypto.png",
     paths: [
@@ -64,7 +65,7 @@ const Projects = () => {
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap mb-1">
+                    <div className="flex flex-wrap  mb-1">
                       {project.paths &&
                         project.paths.map((item) => {
                           return (

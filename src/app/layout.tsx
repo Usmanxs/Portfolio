@@ -18,8 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <ThemeProvider attribute='class' defaultTheme='light'>
-        <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidden`}>
-          {/* <body className='bg-gray-100/50 dark:bg-grey-900 text-black dark:text-white overflow-x-hidden'> */}
+        <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-black text-black dark:text-white overflow-x-hidden`}>
+    
           {children}
        
         </body>

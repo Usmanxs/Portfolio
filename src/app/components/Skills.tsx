@@ -62,14 +62,14 @@ const Skills: React.FC = () => {
   ));
 
   return (
-    <section  className='min-h-[90vh] m-3 w-full'>
+    <section  className='min-h-screen m-3 w-full'>
    <div id='Skills' className='my-5'>
 
     <h2 className="text-4xl text-center my-14 ">Skills</h2>
       <motion.div
     className=" w-full  "
     >
-        <div className=" lg:grid grid-cols-4 mb-7 justify-center">{renderedSkills}</div>
+        <div className=" grid lg:grid-cols-4 gap-4 md:grid-cols-2 sm:grid-cols-1 mb-7 justify-center">{renderedSkills}</div>
       </motion.div>
   
       </div>

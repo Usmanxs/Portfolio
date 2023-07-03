@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = () => {
         window.addEventListener('scroll', updateScroll)
     }, [])
 
-  const navs = ['Home', 'About','Skills', 'Projects','Tools' ,'Contact']
+  const navs = ['Home','Skills', 'Projects','Tools' ,'Contact']
   return (
    
        <motion.header className={`backdrop-filter backdrop-blur-lg flex ${scroll ? 'border-b bg-white bg-opacity-40' : 'border-b-0 flex  ' } dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col  fixed`}
@@ -36,13 +36,13 @@ const Header: React.FC<HeaderProps> = () => {
         transition={{delay:0.2,duration:0.2 , type:'spring'}}
         >
                 
-    <nav className='lg:w-3/4 2xl:w-3/4 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex  justify-end '>
+    <nav className='lg:w-3/4 2xl:w-3/4 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex  justify-evenly'>
       
       <ul className='flex  gap-12'>
                     {navs.map((e, i) => (
                         <li key={i}>
                             <ScrollLink
-                                className='hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize cursor-pointer'
+                                className='hover:text-violet-700 hover:dark:text-violet-500 transition-colors uppercase cursor-pointer'
                                 to={e}
                                 offset={-60}
                                 smooth={true}
@@ -94,12 +94,13 @@ const Header: React.FC<HeaderProps> = () => {
                         </ScrollLink>
                     ))}
                     <ScrollLink
-                        to='contact'
+                        to='Contact'
                         offset={-60}
                         smooth={true}
                         duration={500}
+
                         onClick={() => setNavCollapse(true)}
-                        className='px-6 py-1.5 rounded-md bg-violet-600 hover:bg-violet-700 text-white text-center'>
+                        className='px-6 py-1.5 rounded-md cursor-pointer bg-violet-600 hover:bg-violet-700 text-white text-center'>
                         Contact
                     </ScrollLink>
                 </div>

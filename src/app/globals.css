@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); 
 
 @tailwind base;
 @tailwind components;
@@ -23,7 +23,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #6565656a;
+  background-color: #0000006a;
 }
 
 .scroll-hide::-webkit-scrollbar {

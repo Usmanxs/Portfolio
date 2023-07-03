@@ -1,9 +1,9 @@
 'use client'
 import Image from 'next/image'
 import { useTheme } from 'next-themes'
-import { Link as ScrollLink } from 'react-scroll'
 import Typewriter from 'typewriter-effect';
 import { IoIosArrowForward } from 'react-icons/io';
+import Link from 'next/link';
 import { lazy} from 'react';
 import { easeIn, motion } from 'framer-motion'
 
@@ -12,7 +12,7 @@ const Hero = () => {
   
 
     return (
-        <motion.section  id='Home' className={`  ${theme === 'dark' && "bg-grey-900"} relative min-h-[90vh] w-full mx-auto overflow-hidden`}
+        <motion.section  id='Home' className={`  ${theme === 'dark' && "bg-black"} relative h-screen w-full mx-auto overflow-hidden`}
        
            >
   
@@ -41,30 +41,24 @@ const Hero = () => {
                         />
                     </div>
 
-                    <p className='text-sm md:text-base text-gray-600 dark:text-gray-300'>
+                    <p className='text-md md:text-justify  dark:text-gray-300'>
                     Currently I am working on webapps. 
                      
-                   <p>
-                    I do both frontend and backend development.</p>
-                    </p>
-
-
-                    <ScrollLink
-                        className="w-fit text-sm md:text-base py-2 px-4 cursor-pointer flex items-center gap-1 rounded-md bg-violet-600 hover:bg-violet-700 dark:bg-violet-700 hover:dark:bg-violet-800 transition-colors group text-white"
-                        to={'About'}
-                        offset={-60}
-                        smooth={true}
-                        duration={500}
-                        isDynamic={true}
-                    >
-                        About Me
-                        <IoIosArrowForward className='group-hover:translate-x-1 transition-transform' />
-                    </ScrollLink>
+                   
+                    I do both frontend and backend development.
+                    I like to learn, solve problems, take
+               challenges and build creative things using code. I have a passion for
+              technology and a desire to always push the limits of what is
+              possible. I am always open to new opportunities.</p>
+           
+                <div className="flex items-center   md:mt-4">
+                            { <Link href={'/resume.pdf'} target="_blank" className="text-sm md:text-base bg-violet-600 dark:bg-violet-700 text-white w-fit rounded-md py-2 px-6 hover:shadow-xl transition-shadow">Resume</Link>}
+                        </div>
                 </div>
             
                 <div className="relative mx-auto lg:mx-0 mt-12 md:mt-16 lg:mt-0">
-                    <div className="w-56 h-56 md:w-80 md:h-80 lg:-translate-x-16">
-                    <Image alt='avatar' width={1000} height={1000} className="rounded-full w-full h-full object-cover" src={'/hero.png'} />
+                    <div className="w-48 h-42    lg:w-full lg:h-80 ">
+                    <Image alt='avatar' width={700} height={700} className="  sm:object-cover w-auto   " src={'/uxs.jpg'} />
                     </div>
                 </div>
                      

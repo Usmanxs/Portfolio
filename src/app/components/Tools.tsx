@@ -1,5 +1,4 @@
-'use client'
-import React from 'react';
+
 
 interface Tool {
   paths: string[];
@@ -59,8 +58,8 @@ const Tools: React.FC = () => {
       paths: [
 
         "/mysqllogo.svg",
-        "/mongologo.svg",
-        "/redislogo.svg",
+        "/mongologo.svg", 
+        'firebase.svg',
         'prisma.svg'
       ],
       tagline: "I am familar with SQL, NO SQL and caching databases",
@@ -98,7 +97,7 @@ const Tools: React.FC = () => {
   
   ];
 
-  return (<section className='min-h-[90vh] m-3 w-full '>
+  return (<section className='min-h-screen m-3 w-full '>
 
     <div id='Tools'>
       <div className="flex flex-col items-center my-5">
@@ -107,7 +106,7 @@ const Tools: React.FC = () => {
           These are the tools that I am experienced with and have used in my projects.
         </p>
         
-        <div className="lg:grid grid-cols-3 gap-7   mb-7 justify-center">
+        <div className=" grid lg:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 mb-7 justify-center">
           {tools &&
             tools.map((item, index) => {
               return <ToolView key={index} tool={item} />;
