@@ -12,7 +12,7 @@ const Hero = () => {
   
 
     return (
-        <motion.section  id='Home' className={`  ${theme === 'dark' && "bg-black"} relative h-screen w-full mx-auto overflow-hidden`}
+        <motion.section  id='Home' className={`  ${theme === 'dark' && "bg-black"} relative h-screen w-full mx-auto lg:overflow-hidden`}
        
            >
   
@@ -57,8 +57,8 @@ const Hero = () => {
                 </div>
             
                 <div className="relative mx-auto lg:mx-0 mt-12 md:mt-16 lg:mt-0">
-                    <div className="w-48 h-42    lg:w-full lg:h-80 ">
-                    <Image alt='avatar' width={700} height={700} className="  sm:object-cover w-auto   " src={'/uxs.jpg'} />
+                    <div className="    lg:w-full lg:h-80 ">
+                    <Image alt='avatar' width={700} height={700} className="  lg:object-cover xl:rounded-none max-lg:rounded-full max-lg:w-48 max-lg:h-48  " src={'/uxs.jpg'} />
                     </div>
                 </div>
                      

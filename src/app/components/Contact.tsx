@@ -16,11 +16,11 @@ const Contact = () => {
   }
 
   return (
-    <section className='min-h-screen w-full m-2' >
+    <section className='h-full w-full m-2' >
      <div id="Contact">
 
     <h2 className="text-4xl text-center m-7 ">Contact Me</h2>
-    <form onSubmit={handleSubmit} className="max-w-6xl mx-auto p-6  rounded shadow-lg">
+    <form onSubmit={handleSubmit} className="max-w-6xl mx-auto p-6   rounded shadow-lg">
       <div className="mb-4">
         <label htmlFor="name" className="block  font-bold mb-2">
           Name

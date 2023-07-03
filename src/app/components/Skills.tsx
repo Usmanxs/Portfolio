@@ -67,7 +67,8 @@ const Skills: React.FC = () => {
 
     <h2 className="text-4xl text-center my-14 ">Skills</h2>
       <motion.div
-    className=" w-full  "
+      className='flex justify-center'
+  
     >
         <div className=" grid lg:grid-cols-4 gap-4 md:grid-cols-2 sm:grid-cols-1 mb-7 justify-center">{renderedSkills}</div>
       </motion.div>
