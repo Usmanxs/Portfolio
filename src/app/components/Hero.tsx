@@ -57,8 +57,8 @@ const Hero = () => {
                 </div>
             
                 <div className="relative mx-auto lg:mx-0 mt-12 md:mt-16 lg:mt-0">
-                    <div className="    lg:w-full lg:h-80 ">
-                    <Image alt='avatar' width={700} height={700} className="  lg:object-cover xl:rounded-none max-lg:rounded-full max-lg:w-48 max-lg:h-48  " src={'/uxs.jpg'} />
+                    <div className="    lg:w-full lg:h-90 ">
+                    <Image alt='avatar' width={650} height={700} className="  lg:object-contain xl:rounded-none max-lg:rounded-lg max-lg:w-44 max-lg:h-48  " src={'/uxs.jpg'} />
                     </div>
                 </div>
                      
