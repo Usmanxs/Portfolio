@@ -30,7 +30,7 @@ const Header: React.FC<HeaderProps> = () => {
   const navs = ['Home','Skills', 'Projects','Tools' ,'Contact']
   return (
    
-       <motion.header className={`backdrop-filter backdrop-blur-lg flex ${scroll ? 'border-b bg-white bg-opacity-40' : 'border-b-0 flex  ' } dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col  fixed`}
+       <motion.header className={`backdrop-filter backdrop-blur-lg flex ${scroll ? 'border-b bg-white bg-opacity-40' : 'border-b-0 flex  ' } dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col w-full fixed  `}
         initial={{opacity:0}}
        animate={{opacity:1}}
         transition={{delay:0.2,duration:0.2 , type:'spring'}}
@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = () => {
                     {navs.map((e, i) => (
                         <li key={i}>
                             <ScrollLink
-                                className='hover:text-violet-700 hover:dark:text-violet-500 transition-colors uppercase cursor-pointer'
+                                className='hover:text-gray-700 hover:dark:text-gray-500 transition-colors uppercase cursor-pointer'
                                 to={e}
                                 offset={-60}
                                 smooth={true}
@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = () => {
                     ))}
                     <span
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                        className='hover:bg-gray-100 hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
+                        className='hover:bg-gray-100 hover:dark:bg-gray-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                         {theme === 'dark' ? <FiSun /> : <FiMoon />}
                     </span>
                 </ul>
@@ -66,7 +66,7 @@ const Header: React.FC<HeaderProps> = () => {
                 <div className='flex items-center gap-4'>
                     <span
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                        className='bg-gray-100 dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
+                        className='bg-gray-100 dark:bg-gray-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                         {theme === 'dark' ? <FiSun /> : <FiMoon />}
                     </span>
                     <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
@@ -100,7 +100,7 @@ const Header: React.FC<HeaderProps> = () => {
                         duration={500}
 
                         onClick={() => setNavCollapse(true)}
-                        className='px-6 py-1.5 rounded-md cursor-pointer bg-violet-600 hover:bg-violet-700 text-white text-center'>
+                        className='px-6 py-1.5 rounded-md cursor-pointer bg-gray-600 hover:bg-gray-700 text-white text-center'>
                         Contact
                     </ScrollLink>
                 </div>

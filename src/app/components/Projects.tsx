@@ -40,7 +40,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="Projects" className="min-h-[90vh] m-3 w-full" >
+    <section id="Projects" className="min-h-[90vh]  w-full " >
      <h2 className="text-4xl text-center m-7 ">Projects</h2>
 
       <div className="flex flex-col space-y-24 justify-center m-20" >
@@ -48,21 +48,21 @@ const Projects = () => {
           return (
             <div key={idx}>
              
-                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row ">
-                  <div className=" md:w-full flex justify-center">
+                <div className="flex flex-col   md:flex-row ">
+                  <div className=" md:w-full m-4 flex justify-center">
                     <Link href={project.link}>
                       <Image
                         src={project.image}
-                        alt=""
-                        width={500}
-                        height={100}
-                        className="rounded-xl shadow-xl hover:opacity-70"
+                        alt="img"
+                        width={600}
+                        height={300}
+                        className="rounded-xl shadow-xl  hover:opacity-70"
                       />
                     </Link>
                   </div>
                   <div className="my-8 md:w-full ">
                   <h2 className="text-4xl  mb-7 ">{project.name}</h2>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                    <p className="text-xl lg:w-3/5 mb-4 text-justif text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
                     <div className="flex flex-wrap  mb-1">

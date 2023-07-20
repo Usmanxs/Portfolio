@@ -14,7 +14,7 @@ const ToolView: React.FC<Props> = ({ tool }) => {
   const { paths, tagline, description } = tool;
 
   return (
-    <div className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg p-4 m-4 shadow-md w-72 h-90">
+    <div className="flex flex-col items-center bg-white dark:bg-gray-700 rounded-lg p-4 shadow-md w-80 h-90 overflow-hidden">
       <div className="flex flex-wrap h-32">
         {paths &&
           paths.map((item) => {
@@ -29,7 +29,7 @@ const ToolView: React.FC<Props> = ({ tool }) => {
           })}
       </div>
       <h3 className="bold font-right text-2xl">{tagline}</h3>
-      <p className=' mt-3 text-justify'>{description}</p>
+      <p className=' mb-0 text-justify bottom-0'>{description}</p>
     </div>
   );
 };
@@ -97,7 +97,7 @@ const Tools: React.FC = () => {
   
   ];
 
-  return (<section className='min-h-screen m-3 w-full '>
+  return (<section className=' w-screen '>
 
     <div id='Tools'>
       <div className="flex flex-col items-center my-5">

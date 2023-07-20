@@ -12,11 +12,11 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("meqbjzzb");
 
   if (state.succeeded) {
-    return <p className="text-center text-xl text-violet-500">Message sent!</p>;
+    return <p className="text-center text-xl text-gray-500">Message sent!</p>;
   }
 
   return (
-    <section className='h-full w-full m-2' >
+    <section className='h-full w-screen ' >
      <div id="Contact">
 
     <h2 className="text-4xl text-center m-7 ">Contact Me</h2>
@@ -29,7 +29,7 @@ const Contact = () => {
           id="name"
           type="text"
           name="name"
-          className="w-full border rounded py-2 px-4 focus:outline-none focus:border-violet-500"
+          className="w-full border rounded py-2 px-4 focus:outline-none focus:border-gray-500"
           required
           />
         <ValidationError
@@ -48,7 +48,7 @@ const Contact = () => {
           id="email"
           type="email"
           name="email"
-          className="w-full border border-gray-300 rounded py-2 px-4 focus:outline-none focus:border-violet-500"
+          className="w-full border border-gray-300 rounded py-2 px-4 focus:outline-none focus:border-gray-500"
           required
           />
         <ValidationError
@@ -67,7 +67,7 @@ const Contact = () => {
           id="subject"
           type="text"
           name="subject"
-          className="w-full border border-gray-300 rounded py-2 px-4 focus:outline-none focus:border-violet-500"
+          className="w-full border border-gray-300 rounded py-2 px-4 focus:outline-none focus:border-gray-500"
           required/>
         <ValidationError
           prefix="Subject"
@@ -84,7 +84,7 @@ const Contact = () => {
         <textarea
           id="message"
           name="message"
-          className="w-full border border-gray-300 rounded py-12 px-4   focus:outline-none focus:border-violet-500"
+          className="w-full border border-gray-300 rounded py-12 px-4   focus:outline-none focus:border-gray-500"
           required />
         <ValidationError
           prefix="Message"
@@ -97,7 +97,7 @@ const Contact = () => {
       <button
         type="submit"
         disabled={state.submitting}
-        className="bg-violet-500 text-white rounded py-2 px-4 hover:bg-violet-600 focus:outline-none"
+        className="bg-gray-500 text-white rounded py-2 px-4 hover:bg-gray-600 focus:outline-none"
         >
         Submit
       </button>
