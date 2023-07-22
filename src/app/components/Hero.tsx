@@ -21,11 +21,8 @@ const Hero = () => {
 
             <div className="py-16 lg:py-48 flex flex-col-reverse lg:flex-row justify-around gap-10 lg:gap-0" >
             
-                <motion.div className="flex flex-col gap-4 md:gap-6 text-left lg:w-1/2 2xl:w-1/3 mx-4 md:mx-6 xl:mx-0"
-                    initial={{opacity:0.2,x:-1000}}
-                     transition={{delay:0.1,type:'tween', stiffness:120}}
-                    animate={{opacity:1,x:0}}
-             
+                <div className="flex flex-col gap-4 md:gap-6 text-left lg:w-1/2 2xl:w-1/3 mx-4 md:mx-6 xl:mx-0"
+                 
                    >
                   
                     <h1 className="text-4xl md:text-6xl font-bold relative">
@@ -61,7 +58,7 @@ const Hero = () => {
                 <div className="flex items-center   md:mt-4">
                             { <Link href={'/cv.pdf'} target="_blank" className="text-sm md:text-base bg-gray-600 dark:bg-gray-700 text-white w-fit rounded-md py-2 px-6 hover:shadow-xl transition-shadow">RESUME</Link>}
                         </div>
-                </motion.div>
+                </div>
             
                 <div className="relative mx-auto lg:mx-0 mt-0 md:mt-16 lg:mt-0">
                     <div className="    lg:w-96 lg:h-80 sm:w-62 sm:h-46 object-fit">
