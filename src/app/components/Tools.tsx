@@ -72,29 +72,14 @@ const Tools: React.FC = () => {
       description:
         "I like to keep things simple and elegent so i use nodejs for backend services and api. I love the nodejs community",
     },
+  
     {
-      paths: [
-   
-        "/jestlogo.svg",
-        "/gitactlogo.svg",
-      ],
-      tagline: "I do Test Driven Developement with CI/CD",
-      description:
-      "I am a fan of the test driven approach of writing software. I think its hard but its worth it. I have created several  CI/CD piplines and automated workflows. I have worked with testing frameworks which are used by teams at industry level",
-    },
-    {
-      paths: ["/typescript.svg",  "/javascript.svg","/php.svg"],
+      paths: ["/typescript.svg",  "/javascript.svg"],
       tagline: "Typescript/Javascript is my primary language of choice",
       description:
-        "Most of my projects are built with Typescript. I just love the tooling and overall developement experience. I have also experience in php,",
+        "Most of my projects are built with Typescript. I just love the tooling and overall developement experience.",
     },
-    {
-      paths: ["/dockerlogo.svg"],
-      tagline: "I containerize my applications using docker",
-      description:
-        "I use docker for packaging my applications and services. I use docker-compose for setting up my developement, testing and staging environments",
-    }
-  
+   
   ];
 
   return (<section className=' w-screen '>

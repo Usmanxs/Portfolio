@@ -55,9 +55,7 @@ const Hero = () => {
               technology and a desire to always push the limits of what is
               possible. I am always open to new opportunities.</p>
            
-                <div className="flex items-center   md:mt-4">
-                            { <Link href={'/cv.pdf'} target="_blank" className="text-sm md:text-base bg-gray-600 dark:bg-gray-700 text-white w-fit rounded-md py-2 px-6 hover:shadow-xl transition-shadow">RESUME</Link>}
-                        </div>
+            
                 </div>
             
                 <div className="relative mx-auto lg:mx-0 mt-0 md:mt-16 lg:mt-0">
