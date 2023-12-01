@@ -13,10 +13,9 @@ export default function Home() {
     <div className='w-screen'>
      <Header/>
      <Hero/>
-   
      <Skills/>
-     <Projects/>
      <Tools/>
+     <Projects/>
      <Contact/>
 
      

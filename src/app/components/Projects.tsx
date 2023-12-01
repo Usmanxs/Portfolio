@@ -5,13 +5,30 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "LMS",
+    name: "Ebook",
     description:
-      "Library Mangement System to organize and store data. The system utilizes the Google Books API to organize data related to the book that is authors, cover picture  and description . It provides functionalities such as book search, retrieving book details, displaying book covers, and checking book availability.",
-    image: "/lms.png",
+      "Its an inventory management system for salesmen, ensuring real-time tracking and organization of product stock.  The system aims to provide accurate inventory insights, minimize errors, and optimize overall sales performance",
+    image: "/ebook.PNG",
     paths: [
   
   
+      "next.svg",
+      "typescript.svg",
+      "prisma.svg",
+      "mysqllogo.svg"
+      
+    ],
+    github:"https://github.com/Usmanxs/ebook",
+    link: "https://ebook.usmanxs.com",
+  },
+  {
+    name: "LMS",
+    description:
+    "Library Mangement System to organize and store data. The system utilizes the Google Books API to organize data related to the book that is authors, cover picture  and description . It provides functionalities such as book search, retrieving book details, displaying book covers, and checking book availability.",
+    image: "/lms.png",
+    paths: [
+      
+      
       "/solidjs.svg",
       "typescript.svg",
       "prisma.svg",
@@ -36,6 +53,7 @@ const projects = [
     link: "https://crypto.usmanxs.com/",
   },
   
+  
 ]
 
 const Projects = () => {
@@ -43,13 +61,13 @@ const Projects = () => {
     <section id="Projects" className="min-h-[90vh]  w-full " >
      <h2 className="text-4xl text-center m-7 ">Projects</h2>
 
-      <div className="flex flex-col space-y-24 justify-center m-20" >
+      <div className="flex flex-col space-y-24 justify-center m-16" >
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
              
-                <div className="flex flex-col   md:flex-row ">
-                  <div className=" md:w-full m-4 flex justify-center">
+                <div className="flex flex-col  ml-32   md:flex-row ">
+                  <div className=" md:w-full flex justify-center ">
                     <Link href={project.link}>
                       <Image
                         src={project.image}
@@ -60,9 +78,9 @@ const Projects = () => {
                       />
                     </Link>
                   </div>
-                  <div className="my-8 md:w-full ">
+                  <div className="my-8 lg:mx-12 md:w-full md:m-2">
                   <h2 className="text-4xl  mb-7 ">{project.name}</h2>
-                    <p className="text-xl lg:w-3/5 mb-4 text-justif text-neutral-600 dark:text-neutral-400">
+                    <p className="text-xl lg:w-58 mb-4 text-justify text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
                     <div className="flex flex-wrap  mb-1">
