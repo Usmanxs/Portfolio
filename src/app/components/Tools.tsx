@@ -67,7 +67,7 @@ const Tools: React.FC = () => {
         "I really like sql databases but i also like the simplicity of no-sql databases. I have used both in my projects and i am pretty confident about working with them",
     },
     {
-      paths: ["/nodelogo.svg"],
+      paths: ["/postman.svg","/nodelogo.svg",],
       tagline: "I build backend servers and api in Nodejs",
       description:
         "I like to keep things simple and elegent so i use nodejs for backend services and api. I love the nodejs community",
@@ -78,6 +78,12 @@ const Tools: React.FC = () => {
       tagline: "Typescript/Javascript is my primary language of choice",
       description:
         "Most of my projects are built with Typescript. I just love the tooling and overall developement experience.",
+    },
+    {
+      paths: ["/wordpress.svg"  ],
+      tagline: "Wordpress ",
+      description:
+        "I also build , optimize and manage wrodpress sites ",
     },
    
   ];

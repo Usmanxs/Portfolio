@@ -5,6 +5,23 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Aboutrouter",
+    description:
+      "I've launched a WordPress blog named 'About Router' dedicated to exploring router technologies and connectivity. Additionally, I've successfully integrated AdSense and Ad Manager to optimize monetization and enhance user experience.",
+    image: "/aboutrouter.PNG",
+    paths: [
+  
+  
+      "wordpress.svg",
+      "analytics.svg",
+      "manager.svg",
+      "mysqllogo.svg"
+      
+    ],
+    github:"https://github.com/Usmanxs/themes",
+    link: "https://aboutrouter.com",
+  },
+  {
     name: "Ebook",
     description:
       "Its an inventory management system for salesmen, ensuring real-time tracking and organization of product stock.  The system aims to provide accurate inventory insights, minimize errors, and optimize overall sales performance",
