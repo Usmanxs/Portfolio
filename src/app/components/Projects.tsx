@@ -5,6 +5,23 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Haraj group",
+    description:
+      "The Haraj Group CRM WordPress site for real estate was a custom-built platform designed to streamline property management and enhance client interactions. It featured integrated property listings, lead management tools, and interactive maps tailored specifically for the real estate industry.",
+    image: "/haraj.PNG",
+    paths: [
+  
+  
+      "wordpress.svg",
+      "analytics.svg",
+      "manager.svg",
+      "mysqllogo.svg"
+      
+    ],
+    github:"https://github.com/Usmanxs/themes",
+    link: "https://Harajgroup.online",
+  },
+  {
     name: "Aboutrouter",
     description:
       "I've launched a WordPress blog named 'About Router' dedicated to exploring router technologies and connectivity. Additionally, I've successfully integrated AdSense and Ad Manager to optimize monetization and enhance user experience.",
@@ -15,7 +32,7 @@ const projects = [
       "wordpress.svg",
       "analytics.svg",
       "manager.svg",
-      "mysqllogo.svg"
+      "adsence.svg"
       
     ],
     github:"https://github.com/Usmanxs/themes",
@@ -75,66 +92,59 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="Projects" className="min-h-[90vh]  w-full " >
-     <h2 className="text-4xl text-center m-7 ">Projects</h2>
-
-      <div className="flex flex-col space-y-24 justify-center m-16" >
-        {projects.map((project, idx) => {
-          return (
-            <div key={idx}>
-             
-                <div className="flex flex-col  ml-32   md:flex-row ">
-                  <div className=" md:w-full flex justify-center ">
-                    <Link href={project.link}>
-                      <Image
-                        src={project.image}
-                        alt="img"
-                        width={600}
-                        height={300}
-                        className="rounded-xl shadow-xl  hover:opacity-70"
-                      />
-                    </Link>
-                  </div>
-                  <div className="my-8 lg:mx-12 md:w-full md:m-2">
-                  <h2 className="text-4xl  mb-7 ">{project.name}</h2>
-                    <p className="text-xl lg:w-58 mb-4 text-justify text-neutral-600 dark:text-neutral-400">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap  mb-1">
-                      {project.paths &&
-                        project.paths.map((item) => {
-                          return (
-                            <img
-                              key={item}
-                              className="max-h-8 mr-2"
-                              src={item}
-                              alt="Tool"
-                            />
-                          );
-                        })}
-                    </div>
-                        <div className="flex flex-row align-bottom mt-4 gap-4">
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={30}
-                          className=" hover:-translate-y-1 transition-transform cursor-pointer "
-                        />
-                      </Link>
-                      <Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-               </div>
-          )
-        })}
-        
-      </div>
-    </section>
+    <section id="Projects" className="min-h-[90vh] w-full">
+    <h2 className="text-4xl text-center m-7">Projects</h2>
+  
+    <div className="flex flex-col space-y-8 md:space-y-12 justify-center mx-4 md:mx-12 lg:mx-24">
+      {projects.map((project, idx) => (
+        <div key={idx} className="flex flex-col md:flex-row md:space-x-8">
+          <div className="md:w-1/2 flex justify-center">
+            <Link href={project.link}>
+              <Image
+                src={project.image}
+                alt="img"
+                width={600}
+                height={300}
+                className="rounded-xl shadow-xl hover:opacity-70"
+              />
+            </Link>
+          </div>
+          <div className="md:w-1/2 my-8">
+            <h2 className="text-3xl lg:text-4xl mb-4">{project.name}</h2>
+            <p className="text-lg lg:text-xl mb-4 text-justify text-neutral-600 dark:text-neutral-400">
+              {project.description}
+            </p>
+            <div className="flex flex-wrap mb-4">
+              {project.paths &&
+                project.paths.map((item, index) => (
+                  <img
+                    key={index}
+                    className="max-h-8 mr-2 mb-2"
+                    src={item}
+                    alt="Tool"
+                  />
+                ))}
+            </div>
+            <div className="flex items-center gap-4">
+              <Link href={project.github} target="_blank">
+                <BsGithub
+                  size={30}
+                  className="hover:-translate-y-1 transition-transform cursor-pointer"
+                />
+              </Link>
+              <Link href={project.link} target="_blank">
+                <BsArrowUpRightSquare
+                  size={30}
+                  className="hover:-translate-y-1 transition-transform cursor-pointer"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+  
   )
 }
 
