@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <ThemeProvider attribute='class' defaultTheme='light'>
+      <ThemeProvider attribute='class' defaultTheme='dark'>
         <body className={`${poppins.className} font-poppins bg-gray-100/50 dark:bg-black text-black dark:text-white  m-0 w-full`}>
     
           {children}

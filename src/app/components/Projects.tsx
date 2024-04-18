@@ -92,7 +92,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="Projects" className="min-h-[90vh] w-full">
+    <section id="Projects" className="min-h-[90vh] w-full overflow-hidden">
     <h2 className="text-4xl text-center m-7">Projects</h2>
   
     <div className="flex flex-col space-y-8 md:space-y-12 justify-center mx-4 md:mx-12 lg:mx-24">
