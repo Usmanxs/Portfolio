@@ -4,40 +4,8 @@ import Link from "next/link"
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
-  {
-    name: "Haraj group",
-    description:
-      "The Haraj Group CRM WordPress site for real estate was a custom-built platform designed to streamline property management and enhance client interactions. It featured integrated property listings, lead management tools, and interactive maps tailored specifically for the real estate industry.",
-    image: "/haraj.PNG",
-    paths: [
-  
-  
-      "wordpress.svg",
-      "analytics.svg",
-      "manager.svg",
-      "mysqllogo.svg"
-      
-    ],
-    github:"https://github.com/Usmanxs/themes",
-    link: "https://Harajgroup.online",
-  },
-  {
-    name: "Aboutrouter",
-    description:
-      "I've launched a WordPress blog named 'About Router' dedicated to exploring router technologies and connectivity. Additionally, I've successfully integrated AdSense and Ad Manager to optimize monetization and enhance user experience.",
-    image: "/aboutrouter.PNG",
-    paths: [
-  
-  
-      "wordpress.svg",
-      "analytics.svg",
-      "manager.svg",
-      "adsence.svg"
-      
-    ],
-    github:"https://github.com/Usmanxs/themes",
-    link: "https://aboutrouter.com",
-  },
+
+
   {
     name: "Ebook",
     description:
@@ -54,6 +22,23 @@ const projects = [
     ],
     github:"https://github.com/Usmanxs/ebook",
     link: "https://ebook.usmanxs.com",
+  },
+  {
+    name: "Haraj group",
+    description:
+      "The Haraj Group CRM WordPress site for real estate was a custom-built platform designed to streamline property management and enhance client interactions. It featured integrated property listings, lead management tools, and interactive maps tailored specifically for the real estate industry.",
+    image: "/haraj.PNG",
+    paths: [
+  
+  
+      "wordpress.svg",
+      "analytics.svg",
+      "manager.svg",
+      "mysqllogo.svg"
+      
+    ],
+    github:"https://github.com/Usmanxs/themes",
+    link: "https://Harajgroup.online",
   },
   {
     name: "LMS",
