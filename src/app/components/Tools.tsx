@@ -85,7 +85,12 @@ const Tools: React.FC = () => {
       description:
         "I also build , optimize and manage wrodpress sites ",
     },
-   
+    {
+      paths: ["/aws.svg"  ],
+      tagline: "AWS",
+      description:
+        " I thrive at the intersection of content management and cloud infrastructure. My journey spans both frontend and backend development, with a keen focus on architecting scalable solutions using AWS services.",
+    }
   ];
 
   return (<section className=' w-screen '>

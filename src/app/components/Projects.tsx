@@ -21,7 +21,7 @@ const projects = [
       
     ],
     github:"https://github.com/Usmanxs/ebook",
-    link: "https://ebook.usmanxs.com",
+    link: "https://ebook.usman.digital",
   },
   {
     name: "Haraj group",
@@ -51,11 +51,12 @@ const projects = [
       "/solidjs.svg",
       "typescript.svg",
       "prisma.svg",
-      "mysqllogo.svg"
+      "mysqllogo.svg",
+      "amazon-s3.svg"
       
     ],
     github: "https://github.com/Usmanxs/NCBA-Library",
-    link: "https://www.lms.usmanxs.com/",
+    link: "https://www.lms.usman.digital/",
   },
   {
     name: "Crypto",
@@ -69,7 +70,7 @@ const projects = [
       
     ],
     github: "https://github.com/Usmanxs/crypto",
-    link: "https://crypto.usmanxs.com/",
+    link: "https://crypto.usman.digital/",
   },
   
   
