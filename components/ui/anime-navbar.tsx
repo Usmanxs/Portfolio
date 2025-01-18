@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
+
 import { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -18,7 +18,7 @@ interface NavBarProps {
   defaultActive?: string;
 }
 
-export function AnimeNavBar({ items, className, defaultActive = "Home" }: NavBarProps) {
+export function AnimeNavBar({ items,  defaultActive = "Home" }: NavBarProps) {
   const [mounted, setMounted] = useState(false);
   const [hoveredTab, setHoveredTab] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<string>(defaultActive);

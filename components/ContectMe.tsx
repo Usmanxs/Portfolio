@@ -6,11 +6,11 @@ import { SocialLinks } from "@/components/ui/social-links"
 const socials = [
   {
     name: "Instagram",
-    image: "https://link-hover-lndev.vercel.app/instagram.png",
+    image: "/instagram.png",
   },
   {
     name: "LinkedIn",
-    image: "https://link-hover-lndev.vercel.app/linkedin.png",
+    image: "/linkedin.png",
   },
   {
     name: "Github",
@@ -18,7 +18,7 @@ const socials = [
   },
   {
     name: "Blog",
-    image: "/blog.jpg",
+    image: "/blog.png",
   },
 ]
 function ContectMe() {
