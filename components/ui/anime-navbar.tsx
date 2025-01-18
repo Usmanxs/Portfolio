@@ -18,24 +18,13 @@ interface NavBarProps {
   defaultActive?: string;
 }
 
-export function AnimeNavBar({ items,  defaultActive = "Home" }: NavBarProps) {
+export function AnimeNavBar({ items, defaultActive = "Home" }: NavBarProps) {
   const [mounted, setMounted] = useState(false);
   const [hoveredTab, setHoveredTab] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<string>(defaultActive);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const handleNavigation = (item: NavItem) => {
