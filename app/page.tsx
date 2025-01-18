@@ -2,7 +2,7 @@
 
 import { NaviBar } from "@/components/NaviBar";
 import ContectMe from "@/components/ContectMe";
-import { Projects } from "@/components/Projects";
+// import { Projects } from "@/components/Projects";
 import { Hero } from "@/components/Hero";
 import { Experience } from "@/components/Experience";
 import { motion } from "framer-motion";
@@ -36,7 +36,7 @@ export default function Home() {
         <Experience />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         id="projects"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -45,18 +45,7 @@ export default function Home() {
         className="min-h-screen"
       >
         <Projects />
-      </motion.div>
-
-      <motion.div
-        id="contact"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-        className="min-h-screen"
-      >
-        <ContectMe />
-      </motion.div>
+      </motion.div> */}
       <motion.div
         id="Skills"
         initial={{ opacity: 0 }}
@@ -67,6 +56,17 @@ export default function Home() {
       >
         <Skills />
       </motion.div>
+      <motion.div
+        id="contact"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="min-h-screen"
+      >
+        <ContectMe />
+      </motion.div>
+    
     </div>
   );
 }

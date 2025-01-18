@@ -11,17 +11,17 @@ const socials = [
   {
     name: "LinkedIn",
     image: "/linkedin.png",
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/usmanxs/",
   },
   {
     name: "Github",
     image: "/git.png",
-    url: "https://github.com",
+    url: "https://github.com/Usmanxs",
   },
   {
     name: "Blog",
     image: "/blog.png",
-    url: "https://yourblog.com",
+    url: "https://blog.usman.digital/",
   },
 ];
 
@@ -54,13 +54,13 @@ function ContectMe() {
               />
             </div>
           </div>
-          <div className="mt-12 p-4 flex justify-center lg:justify-start">
+          <div className="mt-12 md:p-4 sm:p-2 flex justify-center lg:justify-start">
             <SocialLinks socials={socials} />
           </div>
         </div>
 
         {/* Right Section */}
-        <div className="flex-1 flex flex-col items-center lg:items-start">
+        <div className="flex-1 flex flex-col items-center lg:items-start  sm:mb-28 sm:pb-48 md:2 md:2">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-left">
             Let’s Connect
           </h1>
