@@ -43,7 +43,7 @@ export function AnimeNavBar({ items, defaultActive = "Home" }: NavBarProps) {
     <div className="fixed lg:top-5 left-0 right-0 z-[9999] max-sm:bottom-5">
       <div className="flex justify-center pt-6">
         <motion.div
-          className="flex items-center gap-3 bg-black/50 border border-white/10 backdrop-blur-lg py-2 px-2 rounded-full shadow-lg relative"
+          className="flex items-center sm:gap-1 md:gap-3 bg-black/50 border border-white/10 backdrop-blur-lg py-2 px-2 rounded-full shadow-lg relative"
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{

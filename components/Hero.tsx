@@ -6,17 +6,17 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <Card className="h-screen bg-black/[0.96] relative left-0 overflow-hidden " id="Home">
-      <div className="flex h-full w-full">
+    <Card className="h-screen bg-black/[0.96] relative left-0 overflow-hidden" id="Home">
+      <div className="flex h-full w-full flex-col lg:flex-row">
         {/* Left content */}
-        <div className="flex-1 mt-4 p-2 lg:px-28 relative z-10 flex flex-col justify-center">
-          <h1 className="text-4xl mt-4 md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+        <div className="flex-1 mt-4 px-4 lg:px-28 relative z-10 flex flex-col justify-center">
+          <h1 className="text-3xl sm:text-lg md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             I&apos;m Muhammad Usman
           </h1>
 
           {/* Animated paragraph */}
           <motion.p
-            className="mt-8 text-neutral-300  max-w-lg"
+            className="mt-8 text-sm sm:text-base md:text-lg lg:text-xl text-neutral-300 max-w-lg"
             initial={{ opacity: 0, y: 20 }} // Start off-screen and transparent
             animate={{ opacity: 1, y: 0 }} // Fade in and move into place
             transition={{ duration: 1.2, ease: "easeOut" }} // Animation timing
