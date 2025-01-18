@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import { Home, FileText, CreditCard, Info } from "lucide-react";
+import { Home, FileText, CreditCard, Info, LucideIcon } from "lucide-react";
 import { AnimeNavBar } from "@/components/ui/anime-navbar";
 
 interface NavItem {
   name: string;
   url: string;
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: LucideIcon; // Use LucideIcon from the lucide-react library
 }
 
 const navItems: NavItem[] = [
@@ -19,7 +19,5 @@ const navItems: NavItem[] = [
 ];
 
 export const NaviBar: React.FC = () => {
-  return (
-    <AnimeNavBar items={navItems} defaultActive="Home" />
-  );
+  return <AnimeNavBar items={navItems} defaultActive="Home" />;
 };
