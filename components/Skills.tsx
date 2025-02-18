@@ -3,7 +3,7 @@ import { FeaturesSectionWithHoverEffects } from './ui/Feature-Section-with-hover
 
 function Skills() {
   return (
-    <div className="min-h-full w-full flex align-middle justify-center  bg-black/[0.96]">
+    <div className="h-full w-full flex align-middle justify-center  bg-black/[0.96]">
       <div className="">
         <div className='m-8 '>
             <h1> Skills</h1>

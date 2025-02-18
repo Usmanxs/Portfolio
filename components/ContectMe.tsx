@@ -5,9 +5,9 @@ import { useState } from "react";
 
 const socials = [
   {
-    name: "Instagram",
-    image: "/instagram.png",
-    url: "https://instagram.com",
+    name: "upwork",
+    image: "/upwork.png",
+    url: "https://www.upwork.com/freelancers/~01711bca3adad15681",
   },
   {
     name: "LinkedIn",
@@ -81,7 +81,7 @@ function ContectMe() {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#060606] z-50">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black z-50">
       {/* Animated Squares Background */}
       <div className="absolute w-full h-full">
         <Squares
@@ -94,43 +94,40 @@ function ContectMe() {
       </div>
 
       {/* Main Content */}
-      <div className="relative w-full max-w-screen-lg py-16 px-4 lg:px-0 flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 text-white z-10">
+      <div className="relative w-full max-w-screen-xl py-16 px-4 lg:px-8 flex flex-col lg:flex-row justify-between items-center gap-12 text-white z-10">
         {/* Left Section */}
-        <div className="flex flex-col items-center lg:items-start">
-          <div className="relative rounded-lg bg-black mx-auto lg:mx-0">
-            <div className="bg-black w-80 h-80 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+        <div className="flex flex-col items-center lg:items-start lg:w-1/2">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-gray-600 to-gray-400 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+            <div className="relative">
               <Image
                 alt="avatar"
-                width={650}
-                height={700}
-                className="w-full h-full object-cover rounded-lg"
-                src={"/uxs.jpg"}
+                width={400}
+                height={400}
+                className="rounded-lg object-cover shadow-2xl transition-transform duration-500 group-hover:scale-105"
+                src="/uxs.jpg"
               />
             </div>
           </div>
-          <div className="mt-12 md:p-4 sm:p-2 flex justify-center lg:justify-start">
-            <SocialLinks socials={socials} />
+          <div className="mt-8">
+            <SocialLinks socials={socials} className="justify-center lg:justify-start" />
           </div>
         </div>
 
         {/* Right Section */}
-        <div className="flex-1 flex flex-col items-center lg:items-start sm:mb-28 sm:pb-48 md:2 md:2">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-left">
-            Let’s Connect
+        <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">
+            Let&apos;s Connect
           </h1>
-          <p className="text-sm sm:text-base lg:text-lg text-center lg:text-left max-w-lg mb-8">
+          <p className="text-lg text-center lg:text-left text-gray-400 mb-8 max-w-lg">
             I am always excited to connect with professionals, developers, and
-            enthusiasts! Feel free to reach out to me through any of the
-            platforms listed here or drop me a message below.
+            enthusiasts! Feel free to reach out through any platform or drop me a message below.
           </p>
 
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="w-full max-w-lg">
-            <div className="mb-4">
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-neutral-300 mb-2"
-              >
+          <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-6">
+            <div className="space-y-2">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-300">
                 Your Name
               </label>
               <input
@@ -139,15 +136,14 @@ function ContectMe() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 rounded-md bg-neutral-800 text-white focus:ring-2 focus:ring-primary outline-none"
+                className="w-full px-4 py-3 rounded-lg bg-gray-900/50 border border-gray-800 text-white 
+                         focus:ring-2 focus:ring-gray-500 focus:border-transparent outline-none 
+                         transition-all duration-200 hover:border-gray-700"
                 placeholder="Enter your name"
               />
             </div>
-            <div className="mb-4">
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-neutral-300 mb-2"
-              >
+            <div className="space-y-2">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-300">
                 Your Email
               </label>
               <input
@@ -156,15 +152,14 @@ function ContectMe() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 rounded-md bg-neutral-800 text-white focus:ring-2 focus:ring-primary outline-none"
+                className="w-full px-4 py-3 rounded-lg bg-gray-900/50 border border-gray-800 text-white 
+                         focus:ring-2 focus:ring-gray-500 focus:border-transparent outline-none 
+                         transition-all duration-200 hover:border-gray-700"
                 placeholder="Enter your email"
               />
             </div>
-            <div className="mb-4">
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-neutral-300 mb-2"
-              >
+            <div className="space-y-2">
+              <label htmlFor="message" className="block text-sm font-medium text-gray-300">
                 Your Message
               </label>
               <textarea
@@ -172,24 +167,39 @@ function ContectMe() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 h-32 rounded-md bg-neutral-800 text-white focus:ring-2 focus:ring-primary outline-none"
+                className="w-full px-4 py-3 h-32 rounded-lg bg-gray-900/50 border border-gray-800 text-white 
+                         focus:ring-2 focus:ring-gray-500 focus:border-transparent outline-none 
+                         transition-all duration-200 resize-none hover:border-gray-700"
                 placeholder="Enter your message"
               ></textarea>
             </div>
             
             {status.error && (
-              <p className="text-red-500 text-sm mb-4">{status.error}</p>
+              <p className="text-red-500 text-sm">{status.error}</p>
             )}
             {status.success && (
-              <p className="text-green-500 text-sm mb-4">{status.success}</p>
+              <p className="text-green-500 text-sm">{status.success}</p>
             )}
             
             <button
               type="submit"
               disabled={status.loading}
-              className="w-full bg-primary hover:bg-primary/80 text-black py-2 rounded-md transition duration-200 disabled:opacity-50"
+              className="w-full py-3 px-6 rounded-lg bg-white text-black font-medium 
+                       hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 
+                       disabled:opacity-50 disabled:cursor-not-allowed transform transition-all 
+                       duration-200 hover:scale-[1.02]"
             >
-              {status.loading ? "Sending..." : "Send Message"}
+              {status.loading ? (
+                <span className="flex items-center justify-center">
+                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  Sending...
+                </span>
+              ) : (
+                "Send Message"
+              )}
             </button>
           </form>
         </div>
