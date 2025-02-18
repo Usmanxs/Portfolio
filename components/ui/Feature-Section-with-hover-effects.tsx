@@ -13,49 +13,52 @@ import {
 export function FeaturesSectionWithHoverEffects() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Cloud & DevOps",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <Terminal />,
-    },
-    {
-      title: "Ease of use",
-      description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <Shuffle />,
-    },
-    {
-      title: "Pricing like no other",
-      description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <DollarSign />,
-    },
-    {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+        "AWS infrastructure, Lambda, CI/CD pipelines, cloud cost optimization, and server management.",
       icon: <Cloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <Share2 />,
-    },
-    {
-      title: "24/7 Customer Support",
+      title: "Frontend Development",
       description:
-        "We are available a 100% of the time. At least our AI Agents are.",
-      icon: <HelpCircle />,
-    },
-    {
-      title: "Money back guarantee",
-      description:
-        "If you do not like EveryAI, we will convince you to like us.",
+        "React.js, Next.js, TypeScript, responsive design, and modern UI frameworks.",
       icon: <Zap />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "Backend Development",
+      description:
+        "Node.js, Express.js, RESTful APIs, WebSocket, and database management.",
+      icon: <Terminal />,
+    },
+    {
+      title: "Database Management",
+      description:
+        "MongoDB, data modeling, optimization, and database architecture.",
+      icon: <Share2 />,
+    },
+    {
+      title: "System Architecture",
+      description:
+        "Microservices, serverless architecture, and scalable system design.",
+      icon: <Shuffle />,
+    },
+    {
+      title: "Performance Optimization",
+      description:
+        "API optimization, cloud performance tuning, and application efficiency.",
       icon: <Heart />,
+    },
+    {
+      title: "Development Practices",
+      description:
+        "Agile methodologies, version control, code review, and team collaboration.",
+      icon: <HelpCircle />,
+    },
+    {
+      title: "Integration & Deployment",
+      description:
+        "Third-party API integration, payment systems, and deployment automation.",
+      icon: <DollarSign />,
     },
   ];
   return (

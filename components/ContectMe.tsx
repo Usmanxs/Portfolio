@@ -1,6 +1,7 @@
 import { Squares } from "@/components/ui/squares-background";
 import Image from "next/image";
 import { SocialLinks } from "@/components/ui/social-links";
+import { useState } from "react";
 
 const socials = [
   {
@@ -26,6 +27,59 @@ const socials = [
 ];
 
 function ContectMe() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState({
+    loading: false,
+    error: "",
+    success: "",
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus({ loading: true, error: "", success: "" });
+
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setStatus({
+        loading: false,
+        error: "",
+        success: "Message sent successfully!",
+      });
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error('Failed to send message:', error);
+      setStatus({
+        loading: false,
+        error: "Failed to send message. Please try again.",
+        success: "",
+      });
+    }
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#060606] z-50">
       {/* Animated Squares Background */}
@@ -60,7 +114,7 @@ function ContectMe() {
         </div>
 
         {/* Right Section */}
-        <div className="flex-1 flex flex-col items-center lg:items-start  sm:mb-28 sm:pb-48 md:2 md:2">
+        <div className="flex-1 flex flex-col items-center lg:items-start sm:mb-28 sm:pb-48 md:2 md:2">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-left">
             Let’s Connect
           </h1>
@@ -71,7 +125,7 @@ function ContectMe() {
           </p>
 
           {/* Contact Form */}
-          <form className="w-full max-w-lg">
+          <form onSubmit={handleSubmit} className="w-full max-w-lg">
             <div className="mb-4">
               <label
                 htmlFor="name"
@@ -82,6 +136,9 @@ function ContectMe() {
               <input
                 id="name"
                 type="text"
+                value={formData.name}
+                onChange={handleChange}
+                required
                 className="w-full px-4 py-2 rounded-md bg-neutral-800 text-white focus:ring-2 focus:ring-primary outline-none"
                 placeholder="Enter your name"
               />
@@ -96,6 +153,9 @@ function ContectMe() {
               <input
                 id="email"
                 type="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
                 className="w-full px-4 py-2 rounded-md bg-neutral-800 text-white focus:ring-2 focus:ring-primary outline-none"
                 placeholder="Enter your email"
               />
@@ -109,15 +169,27 @@ function ContectMe() {
               </label>
               <textarea
                 id="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
                 className="w-full px-4 py-2 h-32 rounded-md bg-neutral-800 text-white focus:ring-2 focus:ring-primary outline-none"
                 placeholder="Enter your message"
               ></textarea>
             </div>
+            
+            {status.error && (
+              <p className="text-red-500 text-sm mb-4">{status.error}</p>
+            )}
+            {status.success && (
+              <p className="text-green-500 text-sm mb-4">{status.success}</p>
+            )}
+            
             <button
               type="submit"
-              className="w-full bg-primary hover:bg-primary/80 text-black py-2 rounded-md transition duration-200"
+              disabled={status.loading}
+              className="w-full bg-primary hover:bg-primary/80 text-black py-2 rounded-md transition duration-200 disabled:opacity-50"
             >
-              Send Message
+              {status.loading ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>

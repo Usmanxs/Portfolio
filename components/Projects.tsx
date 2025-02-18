@@ -5,48 +5,48 @@ import Image from "next/image";
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "Full Stack Development (2020-2021)",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "Started my journey as a Full Stack Developer working with React, Node.js, and MongoDB. Built responsive web applications, implemented RESTful APIs, and managed database architectures. Focused on delivering clean, maintainable code and optimal user experiences.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
+        Year 1
       </div>
     ),
   },
   {
-    title: "Real time changes",
+    title: "Advanced Frontend Development (2021-2022)",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "Specialized in modern frontend frameworks including Next.js and TypeScript. Implemented complex state management solutions, optimized application performance, and integrated third-party APIs. Led frontend architecture decisions and mentored junior developers.",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full flex items-center justify-center text-white">
         <Image
           src="https://ui.aceternity.com/_next/image?url=%2Flinear.webp&w=640&q=75"
           width={300}
           height={300}
           className="h-full w-full object-cover"
-          alt="linear board demo"
+          alt="development visualization"
         />
       </div>
     ),
   },
   {
-    title: "Version control",
+    title: "Backend Excellence (2022-2023)",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Mastered backend development with Node.js, Express, and various databases. Designed and implemented microservices architecture, handled high-traffic applications, and ensured robust security measures. Specialized in API optimization and server-side performance.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
+        Year 3
       </div>
     ),
   },
   {
-    title: "Running out of content",
+    title: "Full Stack Leadership (2023-Present)",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Leading full stack development initiatives, architecting scalable solutions, and implementing DevOps practices. Expertise in cloud services, CI/CD pipelines, and modern development methodologies. Focusing on system design, team leadership, and technical strategy.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+        Year 4
       </div>
     ),
   },
