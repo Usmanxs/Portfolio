@@ -20,9 +20,9 @@ const socials = [
     url: "https://github.com/Usmanxs",
   },
   {
-    name: "Blog",
+    name: "Documents",
     image: "/blog.png",
-    url: "https://blog.usman.digital/",
+    url: "https://Docs.usman.digital/",
   },
 ];
 
