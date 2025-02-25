@@ -57,7 +57,7 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="h-screen relative"
+          className="h-full relative"
         >
           <Skills />
         </motion.div>
@@ -68,7 +68,7 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="min-h-screen"
+          className="h-full"
         >
           <ContectMe />
         </motion.div>
