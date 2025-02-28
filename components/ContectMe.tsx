@@ -81,7 +81,7 @@ function ContectMe() {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black z-50">
+    <div className="relative min-h-full flex items-center justify-center overflow-hidden bg-black z-50">
       {/* Animated Squares Background */}
       <div className="absolute w-full h-full">
         <Squares
@@ -201,6 +201,8 @@ function ContectMe() {
                 "Send Message"
               )}
             </button>
+            <p>Email: <a href="mailto:contect@usman.digital" className="underline">contect@usman.digital</a></p>
+
           </form>
         </div>
       </div>

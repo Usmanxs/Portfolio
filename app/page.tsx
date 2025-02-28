@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import { LoadingIntro } from "@/components/LoadingIntro";
 import { useState, useEffect } from "react";
 
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -71,6 +72,9 @@ export default function Home() {
           className="h-full"
         >
           <ContectMe />
+
+          <p className="mt-4 w-full text-center text-sm">© {new Date().getFullYear()} Usman Digital. All rights reserved.</p>
+      
         </motion.div>
       </div>
     </div>
