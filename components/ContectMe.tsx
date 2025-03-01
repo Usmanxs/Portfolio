@@ -201,7 +201,7 @@ function ContectMe() {
                 "Send Message"
               )}
             </button>
-            <p>Email: <a href="mailto:contect@usman.digital" className="underline">contect@usman.digital</a></p>
+            <p>Email: <a href="mailto:contect@usman.digital" className="underline">contact@usman.digital</a></p>
 
           </form>
         </div>
