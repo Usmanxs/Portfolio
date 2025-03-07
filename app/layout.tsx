@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         <div className="relative">
           {/* Add Spotlight here */}
-          <Spotlight size={200}  className="mix-blend-lighten  z-10 "
+          <Spotlight size={70}  className="mix-blend-lighten  z-10 "
            />
 
           {/* Render the children */}
